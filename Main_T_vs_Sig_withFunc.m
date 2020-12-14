@@ -1,0 +1,9 @@
+num=500;
+Radius=100;
+Veloc=3.83;
+Delta_t=0.1;
+Time_Pen=5;
+Check_Time=0.1;
+Sigma=pi()/15;
+[Radius,Veloc,Delta_t,Sigma,num,Time_Pen,min_Int,min_Time_Total,min_Path_Total,CI_T1,CI_T2,CI_L1,CI_L2]=Main_T_vs_Sig_Func( Trial_Num,num,Radius,Veloc,Delta_t,Time_Pen,Check_Time,Sigma);
+Trial_Num = Write_To_Excel_3(Trial_Num,'Persist',Radius,Veloc,Delta_t,Sigma,num,Time_Pen,min_Int,min_Time_Total,min_Path_Total,CI_T1,CI_T2,CI_L1,CI_L2);
